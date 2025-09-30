@@ -121,3 +121,27 @@
         padding: 15px 0;
         margin-top: auto;
     }
+
+/* Secondary bar (Overview) */
+.secondary-bar {
+    background-color: #f4f4f4; /* light gray background (change as needed) */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px 20px;
+    border-bottom: 2px solid #ccc;
+}
+
+.secondary-bar .logo {
+    height: 50px; /* adjust size */
+    width: auto;
+    margin-right: 30px;
+    border-radius: 15px;
+    border: 2px solid black;
+}
+
+.secondary-bar h1 {
+    font-size: 1.8rem;
+    margin: 0;
+}
