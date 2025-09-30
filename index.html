@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KIMinder360 Project Page</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background-color: #f0f0f0;
+        color: #333;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    nav {
+        background-color: #222;
+        color: white;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 10px 0;
+        gap: 15px;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 8px 12px;
+        border-radius: 5px;
+        transition: background 0.3s;
+    }
+
+    nav a:hover {
+        background-color: #555;
+    }
+
+    .content {
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 40px 20px;
+        background-color: #ffffff;
+        margin: 20px auto;
+        border-radius: 15px;
+        max-width: 1200px;
+    }
+
+    .content img.logo {
+        width: 250px;
+        height: auto;
+        margin-right: 30px;
+        border-radius: 15px;
+        border: 2px solid black;
+    }
+
+    .content-text {
+        max-width: 700px;
+    }
+
+    h1 {
+        font-size: 2.5em;
+        margin-bottom: 10px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+        margin: 15px 0 5px;
+    }
+
+    p {
+        font-size: 1.2em;
+        margin: 10px 0;
+        line-height: 1.6em;
+    }
+
+    .section {
+        width: 95%;
+        max-width: 1200px;
+        margin: 25px auto;
+        padding: 30px;
+        background-color: #ffffff;
+        border-radius: 15px;
+        text-align: left;
+        color: #333;
+    }
+
+    .members {
+        background-color: #e0e0e0;
+        padding: 30px 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        border-radius: 10px;
+    }
+
+    .member-card {
+        background-color: #ffffff;
+        padding: 15px;
+        border-radius: 10px;
+        width: 180px;
+        text-align: center;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .member-card img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 10px;
+        border: 2px solid #333;
+    }
+
+    .footer {
+        background-color: #222;
+        color: white;
+        text-align: center;
+        padding: 15px 0;
+        margin-top: auto;
+    }
+
+</style>
+</head>
+<body>
+
+    <nav>
+        <a href="#overview">Project Overview</a>
+        <a href="#features">Features</a>
+        <a href="#team">Team</a>
+        <a href="#technologies">Technologies</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#demo">Demo / Code</a>
+        <a href="#resources">Resources</a>
+    </nav>
+
+    <div class="content" id="overview">
+        <img src="KIMinder360 Logo Full Size.png" alt="Team Logo" class="logo">
+        <div class="content-text">
+            <h1>KIMinder360 Mobile App</h1>
+            <p>The KIMinder360 App trains users in crucial Situational Awareness skills through the sending out of mindfullness directives during action windows throughout the day. It allows for customization to match personal preferences and provides an end-of-day evaluation and tracking of progress. Our goal is to make Situational Awareness training accessible, fun, and effective for everyone.</p>
+        </div>
+    </div>
+
+    <div class="section" id="features">
+        <h2>Features & Functionality</h2>
+        <p>The KIMinder360 App allows users to select “Action Windows” for receiving notifications and to choose from multiple categories of directives, including personal safety, tactical readiness, fitness, social interactions, and more. Users can track their performance via the app dashboard.</p>
+        <p>Key Features:</p>
+        <ul>
+            <li>Randomized directives for situational awareness and self-improvement.</li>
+            <li>Customizable action windows and category selections.</li>
+            <li>End-of-day progress evaluation and feedback.</li>
+            <li>Dashboard for tracking performance and statistics.</li>
+            <li>Expandable database of exercises with future user contributions.</li>
+        </ul>
+    </div>
+
+    <div class="section" id="technologies">
+        <h2>Technologies & Tools</h2>
+        <p>We are using Android Studio for mobile development, cloud databases for user data storage, notification services for directive delivery, and UI/UX best practices to ensure usability. Future expansions may include cross-platform frameworks for iOS deployment.</p>
+    </div>
+
+    <div class="section" id="schedule">
+        <h2>Schedule & Milestones</h2>
+        <p>Project milestones include:</p>
+        <ul>
+            <li>Initial App Architecture & Database Setup</li>
+            <li>Implementation of Notification System</li>
+            <li>End-of-Day Reporting & Dashboard</li>
+            <li>Playtesting & User Feedback</li>
+            <li>Full Category Implementation & Stretch Goals</li>
+        </ul>
+        <p>Detailed updates and links to status reports will be included here as the project progresses.</p>
+    </div>
+
+    <div class="section" id="demo">
+        <h2>Demo & Code</h2>
+        <p>Once future development begins, users will be able to download the codebase and access demo screenshots and videos that illustrate key functionality and use cases of the KIMinder360 app. Stay Tuned!</p>
+    </div>
+
+    <div class="section" id="resources">
+        <h2>Resources & Documentation</h2>
+        <p>This section will archive all project documentation, including requirement specifications, design documents, meeting notes, and presentations. Each document will include a brief description for context.</p>
+    </div>
+
+    <div class="section" id="team">
+        <h2>Our Team</h2>
+        <div class="members">
+            <div class="member-card">
+                <img src="Cole_Headshot.JPEG" alt="Cole Bishop">
+                <h3>Cole Bishop</h3>
+                <p>cdb499@nau.edu</p>
+            </div>
+            <div class="member-card">
+                <img src="Dylan_Headshot.jpg" alt="Dylan Hyer">
+                <h3>Dylan Hyer</h3>
+                <p>deh277@nau.edu</p>
+            </div>
+            <div class="member-card">
+                <img src="Nyle_Headshot.jpg" alt="Nyle Huntley">
+                <h3>Nyle Huntley</h3>
+                <p>nah353@nau.edu</p>
+            </div>
+            <div class="member-card">
+                <img src="Mayanna_Headshot.jpg" alt="Mayanna John">
+                <h3>Mayanna John</h3>
+                <p>mrj335@nau.edu</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2025 KIMinder360 Team | Capstone Project | NAU</p>
+    </div>
+
+</body>
+</html>
