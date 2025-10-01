@@ -122,7 +122,7 @@
         margin-top: auto;
     }
 
-/* Secondary bar (Overview) */
+/* Secondary bar below nav menu */
 .secondary-bar {
     background-color: #f4f4f4; /* light gray background (change as needed) */
     display: flex;
@@ -145,3 +145,72 @@
     font-size: 1.8rem;
     margin: 0;
 }
+
+/* Team Page Styling */
+#team {
+    padding: 40px 20px;
+}
+
+.member {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+.member img {
+    width: 120px;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.member-info h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.5rem;
+}
+
+.member-info p {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+
+/* Documentation Page Styling */
+.document-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+}
+
+.document-card h3 {
+    margin-top: 0;
+    font-size: 1.4rem;
+}
+
+.document-card p {
+    margin: 8px 0;
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+.download-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 16px;
+    background-color: #0077cc;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: #005fa3;
+}
+
