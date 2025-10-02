@@ -1,13 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>KIMinder360 Project Page</title>
-<link rel="stylesheet" type="text/css" href="../Styles/styles.css">
-</head>
-<body>
-
     <div id="site-nav">Loading navigation...</div>
     <script>
         // Load shared navbar and inject into the page
@@ -28,9 +20,25 @@
         <p>We are using Android Studio for mobile development, cloud databases for user data storage, notification services for directive delivery, and UI/UX best practices to ensure usability. Future expansions may include cross-platform frameworks for iOS deployment.</p>
     </div>
 
-    <div class="footer">
-        <p>&copy; 2025 KIMinder360 Team | Capstone Project | NAU</p>
-    </div>
+    <div id="site-footer">Loading footer...</div>
+    <script>
+        // Load shared nav + footer and inject into the page
+        fetch('nav-footer.html')
+            .then(resp => { if (!resp.ok) throw new Error('Network response was not ok'); return resp.text(); })
+            .then(html => {
+                const tmp = document.createElement('div');
+                tmp.innerHTML = html;
+                const nav = tmp.querySelector('nav');
+                const footer = tmp.querySelector('.footer');
+                if (nav) document.getElementById('site-nav').innerHTML = nav.outerHTML;
+                if (footer) document.getElementById('site-footer').innerHTML = footer.outerHTML;
+            })
+            .catch(err => {
+                document.getElementById('site-nav').innerText = 'Failed to load navigation.';
+                document.getElementById('site-footer').innerText = 'Failed to load footer.';
+                console.error(err);
+            });
+    </script>
 
 </body>
 </html>
