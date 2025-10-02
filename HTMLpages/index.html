@@ -30,7 +30,7 @@
                 const nav = tmp.querySelector('nav');
                 const footer = tmp.querySelector('.footer');
                 if (nav) document.getElementById('site-nav').innerHTML = nav.outerHTML;
-                if (footer) document.getElementById('site-footer').innerHTML = footer.outerHTML;
+                if (footer) document.getElementById('site-footer').outerHTML = footer.outerHTML;
             })
             .catch(err => {
                 document.getElementById('site-nav').innerText = 'Failed to load navigation.';
