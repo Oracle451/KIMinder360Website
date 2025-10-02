@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KIMinder360 Project Page</title>
+<link rel="stylesheet" type="text/css" href="../Styles/styles.css">
+</head>
+<body>
+
     <div id="site-nav">Loading navigation...</div>
-    <script>
-        // Load shared navbar and inject into the page
-        fetch('navbar.html')
-            .then(resp => { if (!resp.ok) throw new Error('Network response was not ok'); return resp.text(); })
-            .then(html => document.getElementById('site-nav').innerHTML = html)
-            .catch(err => { document.getElementById('site-nav').innerText = 'Failed to load navigation.'; console.error(err); });
-    </script>
 
     <!-- Secondary bar -->
     <div class="secondary-bar">
