@@ -8,15 +8,7 @@
 </head>
 <body>
 
-    <nav>
-        <a href="index.html">Project Overview</a>
-        <a href="features.html">Features</a>
-        <a href="team.html">Team</a>
-        <a href="technologies.html">Technologies</a>
-        <a href="schedule.html">Schedule</a>
-        <a href="demo.html">Demo / Code</a>
-        <a href="documentation.html">Documentation</a>
-    </nav>
+    <div id="site-nav">Loading navigation...</div>
 
     <div class="content" id="overview">
         <img src="../KIMinder360 Logo Full Size.png" alt="Team Logo" class="logo">
@@ -26,9 +18,49 @@
         </div>
     </div>
 
-    <div class="footer">
-        <p>&copy; 2025 KIMinder360 Team | Capstone Project | NAU</p>
+    <div class="members">
+        <div class="member-card">
+            <img src="../TeamHeadshots/Cole_Headshot.JPEG" alt="Cole Bishop">
+            <h3>Cole Bishop</h3>
+            <p>cdb499@nau.edu</p>
+        </div>
+        <div class="member-card">
+            <img src="../TeamHeadshots/Dylan_Headshot.jpg" alt="Dylan Hyer">
+            <h3>Dylan Hyer</h3>
+            <p>deh277@nau.edu</p>
+        </div>
+        <div class="member-card">
+            <img src="../TeamHeadshots/Nyle_Headshot.jpg" alt="Nyle Huntley">
+            <h3>Nyle Huntley</h3>
+            <p>nah353@nau.edu</p>
+        </div>
+        <div class="member-card">
+            <img src="../TeamHeadshots/Mayanna_Headshot.jpg" alt="Mayanna John">
+            <h3>Mayanna John</h3>
+            <p>mrj335@nau.edu</p>
+        </div>
     </div>
+
+    <div id="site-footer">Loading footer...</div>
+    <script>
+        // Load shared nav + footer and inject into the page
+        fetch('nav-footer.html')
+            .then(resp => { if (!resp.ok) throw new Error('Network response was not ok'); return resp.text(); })
+            .then(html => {
+                // Create a temporary container to query parts
+                const tmp = document.createElement('div');
+                tmp.innerHTML = html;
+                const nav = tmp.querySelector('nav');
+                const footer = tmp.querySelector('.footer');
+                if (nav) document.getElementById('site-nav').innerHTML = nav.outerHTML;
+                if (footer) document.getElementById('site-footer').outerHTML = footer.outerHTML;
+            })
+            .catch(err => {
+                document.getElementById('site-nav').innerText = 'Failed to load navigation.';
+                document.getElementById('site-footer').innerText = 'Failed to load footer.';
+                console.error(err);
+            });
+    </script>
 
 </body>
 </html>
