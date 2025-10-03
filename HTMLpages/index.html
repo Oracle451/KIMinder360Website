@@ -19,16 +19,17 @@
     </div>
 
     <div class="section" id="client">
-        <div style="display:flex;flex-wrap:wrap;gap:20px;align-items:flex-start;justify-content:center;">
-            <div style="flex:1;min-width:260px;max-width:700px;text-align:left;">
+        <div class="client-row">
+            <div class="client-intro">
                 <h2>Our Client</h2>
-                <p>Morgan Boatman is a video producer, author, and owner of Winter Communications, LLC. He created Missions and Madness, an outdoor team-building experience centered around exploration and developing personal agency. Along with this, he's created the <a href="https://kiminder360.com/" target="_blank" rel="noopener">KIMinder360</a> project to help people train their situational awareness skills. TO BE EXPANDED</p>
+                <p>Morgan Boatman is a video producer, author, and owner of Winter Communications, LLC. He created Missions and Madness, an outdoor team-building experience centered around exploration and developing personal agency.</p>
+                <p>Along with this, he's created the <a href="https://kiminder360.com/" target="_blank" rel="noopener">KIMinder360</a> project to help people train their situational awareness skills. Previously, Morgan had to manually contact all of his customers and give them training directives, but our KIMinder360 app will automate that entire process.</p>
             </div>
 
-            <div style="display:flex;align-items:flex-start;gap:16px;min-width:260px;">
-                <img src="../TeamHeadshots/Morgan_Headshot.jpg" alt="Morgan Boatman" style="width:200px;height:auto;border-radius:10px;border:2px solid #333;">
+            <div class="client-side">
+                <img src="../TeamHeadshots/Morgan_Headshot.jpg" alt="Morgan Boatman" class="client-photo">
                 <div class="client-contact" style="text-align:left;">
-                    <p style="font-weight:bold;">Morgan W. Boatman</p>
+                    <p class="client-name">Morgan W. Boatman</p>
                     <p>Winter Communication, LLC</p>
                     <p>2225 N Gemini Dr Suite E2</p>
                     <p>Flagstaff, AZ 86001</p>
@@ -65,7 +66,7 @@
     <div id="site-footer">Loading footer...</div>
     <script>
         // Load shared nav + footer and inject into the page
-        fetch('nav-footer.html')
+    fetch('nav-footer.html?v=' + Date.now())
             .then(resp => { if (!resp.ok) throw new Error('Network response was not ok'); return resp.text(); })
             .then(html => {
                 // Create a temporary container to query parts
