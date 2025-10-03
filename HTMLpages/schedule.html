@@ -33,7 +33,7 @@
     <div id="site-footer">Loading footer...</div>
     <script>
         // Load shared nav + footer and inject into the page
-        fetch('nav-footer.html')
+    fetch('nav-footer.html?v=' + Date.now())
             .then(resp => { if (!resp.ok) throw new Error('Network response was not ok'); return resp.text(); })
             .then(html => {
                 const tmp = document.createElement('div');
