@@ -228,8 +228,6 @@
 }
 
     .client-intro {
-    /* Allow the intro column to take more horizontal space so text lines are longer
-       and align visually with the photo column on wide screens. */
     flex: 1 1 78%;
     min-width: 320px;
     max-width: 900px;
@@ -237,8 +235,6 @@
 }
 
     .client-side {
-    /* Slightly narrower side column so the intro has more room while keeping
-       the photo and contact block stable. */
     display: flex;
     align-items: center;
     gap: 18px;
@@ -247,7 +243,6 @@
 }
 
     .client-photo {
-    /* Slightly smaller photo to improve balance with the wider intro column */
     width: 200px;
     height: auto;
     border-radius: 10px;
