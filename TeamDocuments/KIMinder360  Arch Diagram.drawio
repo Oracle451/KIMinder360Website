@@ -1,0 +1,82 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0" version="28.2.7">
+  <diagram name="Page-1" id="MQKsA1ZqIh90M_oyxhQn">
+    <mxGraphModel dx="455" dy="478" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="VtRZtHHL5SAkgC5d6J-k-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="30" width="590" height="430" as="geometry" />
+        </mxCell>
+        <mxCell id="VtRZtHHL5SAkgC5d6J-k-3" value="KIMinder360 Architectural Diagram" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="30" width="590" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="VtRZtHHL5SAkgC5d6J-k-4" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="90" width="280" height="350" as="geometry" />
+        </mxCell>
+        <mxCell id="VtRZtHHL5SAkgC5d6J-k-5" value="User Device (KIMinder360 Mobile App)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="80" width="280" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VtRZtHHL5SAkgC5d6J-k-6" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="130" width="240" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="VtRZtHHL5SAkgC5d6J-k-7" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="240" width="240" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="VtRZtHHL5SAkgC5d6J-k-8" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="350" width="240" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="VtRZtHHL5SAkgC5d6J-k-9" value="UI Layer" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="130" width="240" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="VtRZtHHL5SAkgC5d6J-k-10" value="App Logic Layer" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="240" width="240" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="VtRZtHHL5SAkgC5d6J-k-11" value="Local Data Layer" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="350" width="240" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="VtRZtHHL5SAkgC5d6J-k-13" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="130" width="210" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="VtRZtHHL5SAkgC5d6J-k-14" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="VtRZtHHL5SAkgC5d6J-k-4" target="VtRZtHHL5SAkgC5d6J-k-13">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="320" as="sourcePoint" />
+            <mxPoint x="450" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VtRZtHHL5SAkgC5d6J-k-15" value="Optional Sync" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="460" y="270" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="VtRZtHHL5SAkgC5d6J-k-16" value="Dashboard" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="212.5" y="160" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VtRZtHHL5SAkgC5d6J-k-17" value="Category Selection" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="295" y="160" width="65" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VtRZtHHL5SAkgC5d6J-k-18" value="Action Window Selection" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="160" width="60" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VtRZtHHL5SAkgC5d6J-k-19" value="Directive Randomizer" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="207.5" y="270" width="75" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VtRZtHHL5SAkgC5d6J-k-20" value="Response Tracker" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="270" width="60" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VtRZtHHL5SAkgC5d6J-k-22" value="Room Database" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="270" y="380" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VtRZtHHL5SAkgC5d6J-k-25" value="Firebase Cloud" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="130" width="210" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VtRZtHHL5SAkgC5d6J-k-27" value="Custom Directive Adding" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="270" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VtRZtHHL5SAkgC5d6J-k-29" value="Firestore (Directive and User Data Sotrage)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="200" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VtRZtHHL5SAkgC5d6J-k-30" value="Firebase Auth (User Authentication)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="300" width="150" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
