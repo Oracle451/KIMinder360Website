@@ -18,19 +18,121 @@
     </div>
 
     <div class="section" id="features">
-        <h2>Overall Problem</h2>
-        <p>The KIMinder360 service was initially all done manually. People would have to sign up and give Morgan a phone number in order to receive directives, which he would then call one-by-one. This was a time-consuming process and was difficult to maintain long term or scale efficiently.</p>
-    
-        <h2>Features & Functionality</h2>
-        <p>The KIMinder360 App allows users to select “Action Windows” for receiving notifications and to choose from multiple categories of directives, including personal safety, tactical readiness, fitness, social interactions, and more. Users can track their performance via the app dashboard.</p>
-        <p>Key Features:</p>
-        <ul>
-            <li>Randomized directives for situational awareness and self-improvement.</li>
-            <li>Customizable action windows and category selections.</li>
-            <li>End-of-day progress evaluation and feedback.</li>
-            <li>Dashboard for tracking performance and statistics.</li>
-            <li>Expandable database of exercises with future user contributions.</li>
-        </ul>
+        <h1>Features</h1>
+
+        <p><strong>Summary: </strong> The KIMinder360 app's functional requirements are prioritized into Must-Have (essential for MVP), Should-Have (valuable enhancements), and Could-Have (future expansions) categories. Below is a concise summary of all features, including user stories, priorities, estimates, key acceptance criteria, and descriptions. Won’t Have features are not present at this time, ensuring focus on achievable deliverables.</p>
+
+        <h2>Must Have Features</h2>
+
+        <ol>
+            <li>
+                <p>
+                    <strong> Push Notifications: </strong> 
+                    This feature implements the primary delivery mechanism for KIMinder360’s directives, ensuring that prompts are non-intrusive but consistent. Notifications use Android’s AlarmManager or WorkManager for scheduling. This connects to our domain level requirement of automated situational awareness training by enabling the core functionality of sending out directives to users.
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    <strong> Database of Directives: </strong> 
+                    This feature provides the backbone for directive delivery and tracking. It ensures that all reminders and user interactions pull from a single source. The database works in tandem with push notifications, forming the core of KIMinder360’s directive system.
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    <strong> Catagory Selection: </strong> 
+                    This feature enhances the gamification of the app while also creating new ways to become situationally aware. This feature will provide different categories of directives in order to give the user an experience that fits their goals better. This connects to our domain level requirement of user customization and scheduling by allowing users to select only the directive categories that apply to them for the best possible experience custom to their needs.
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    <strong> Active Hours Selection: </strong> 
+                    This feature allows users to customize specific hours during which they wish to receive directives or notifications. The system displays a UI that shows all seven days of the week, with each day allowing the user to select an active time range. This feature helps users lessen interruptions outside their preferred hours while having a balanced schedule. This connects to our domain level requirement of user customization and scheduling by letting the user select when they are assigned directives to work around their busy schedules.
+                </p>
+            </li>
+        </ol>
+
+        <h2>Should Have Features</h2>
+
+        <ol>
+            <li>
+                <p>
+                    <strong> Personal Directive Submission: </strong> 
+                    This feature allows users to add personal directives that fit their individual goals or routines. By supporting personal directive creation, users can continue to find value in KIMinder360 even if official development or new directive sets are no longer released. This ensures that the app remains useful and relevant over time, empowering users to sustain their own situational awareness practice indefinitely. This connects to our domain level requirement of user customization by letting users create their own directives that are specific to their situations to create an experience that is best for them. It also ties into our data handling and directive management domain requirement by necessitating that our data structures can handle user created content.
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    <strong> User Engagement Selection: </strong> 
+                    This feature allows the user to select 1 of three engagement levels for interacting with directives going from no engagement to full written response. This allows users to approach the situational awareness training with however much effort and attentiveness that they desire. This connects to our domain level requirement of user customization by letting users decide how much they interact with the directives they are given to match them where they are in their situational awareness journey.
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    <strong> Difficulty Selection: </strong> 
+                    This feature allows users to be able to change the difficulty level of the directives they receive within their category. This creates more depth to the app and a way for users to challenge themselves if that is what they’re looking for. This connects to our domain level requirement of user customization by allowing our users to choose how intense the directives they receive are.
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    <strong> Skip or Delay/Postpone/Bookmark Directive Option: </strong> 
+                    This feature allows users better control for when and how they interact with directives. That way, by offering these options, users can manage their focus and prioritize their tasks. When a user chooses to skip a directive, that directive is archived. When they choose to postpone, the directive is rescheduled for a later time. When they bookmark, the directive is saved for later review. This connects to our domain level requirement of user customization by letting them postpone directives they are not able to complete at the current time and skip directives they have no interest in.
+                </p>
+            </li>
+        </ol>
+
+        <h2>Could Have Features</h2>
+
+        <ol>
+            <li>
+                <p>
+                    <strong> Location Functionality: </strong> 
+                    Location services expand the capabilities of the KIMinder360 app to allow for more relevant directives that adapt to context and for us to connect users with each other through the app. Implementation is optional in the MVP. This connects to our domain level requirement of automated situational awareness training by encouraging training that is more in depth by connecting users with each other or having them do specific tasks that could only be done in their current location.
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    <strong> Multipart Directives: </strong>
+                    This requirement adds the feature of specialized multipart directives that build on one another with a set theme. Through this feature we can improve user retention and enjoyment through gamified mechanics while also implementing advanced training that single directives won't allow for. This connects to our domain level requirement of automated situational awareness training by pushing our users to improve their skills even more through chains of directives that build on one another. 
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    <strong> Completed Directives List: </strong>
+                    This feature provides users with a visual record of their progress. It allows them to see which directives they’ve completed and encourages consistent engagement. It would later become a component of the broader “Dashboard” that displays user progress or performance trends. This connects to our domain level requirement of directive management and data handling by forcing us to create in depth databases that keep track of user activity and directive history. 
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    <strong> Monetization: </strong> 
+                    This feature enables future revenue generation by allowing users to buy new directive categories, packs, or additional features such as themes or extra cloud storage for sharing directives online. Monetization would be handled securely through the respective app store’s purchase system(s) and integrated within the user interface as optional enhancements. This connects to our domain level requirement of Scalability and growth by giving us the option to develop new content in the form of directive packages and categories that the user can purchase.
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    <strong> Leaderboards: </strong> 
+                    This feature allows users to compete in completing directives and be displayed in a leaderboard among peers or household members. The leaderboard would display the total number of directives that the top users have completed. This connects to our domain level requirement of automated situational awareness training by implementing a gamification mechanic that will encourage the user to try harder directives and complete more in any given period of time.
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    <strong> Cloud Database Shared Directives: </strong> 
+                    This feature provides centralized data management for all information with directives. By using a secure cloud database, directives are accessible and synced across different devices and accounts. This system allows for shared access among users, giving them control to collaborate with chosen users. This connects to our domain level requirement of scalability and growth by letting our community think of directives that our development team could not and contributing them to the community database where our content will grow naturally.
+                </p>
+            </li>
+        </ol>
+
+        <p>These requirements ensure the app meets expectations for functionality, engagement, and safety, with MustHave as the MVP foundation, Should Have for enhancements, and Could Have for growth pathways.</p>
     </div>
 
     <div id="site-footer">Loading footer...</div>
