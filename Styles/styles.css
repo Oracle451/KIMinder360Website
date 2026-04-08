@@ -308,3 +308,107 @@
     .demo-item { flex: 1 1 90%; max-width: 560px; }
 }
 
+/* ── Feature Blocks ───────────────────────────────────────── */
+
+.feature-block {
+    margin: 2.5rem 0;
+    padding: 2rem;
+    border-radius: 10px;
+    background: var(--surface, #fff);           /* adapts to your existing theme vars */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+}
+
+.feature-block--alt {
+    background: var(--surface-alt, #f7f7f7);    /* subtle alternating background */
+}
+
+.feature-header {
+    margin-bottom: 1.25rem;
+}
+
+.feature-header h3 {
+    margin: 0 0 0.25rem;
+    font-size: 1.4rem;
+}
+
+.feature-tagline {
+    margin: 0;
+    font-style: italic;
+    opacity: 0.7;
+    font-size: 0.95rem;
+}
+
+/* ── Feature Body: side-by-side layout ───────────────────── */
+
+.feature-body {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.feature-body--reversed {
+    flex-direction: row-reverse;
+}
+
+.feature-screenshots {
+    flex: 0 0 auto;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.feature-screenshots figure {
+    margin: 0;
+    text-align: center;
+}
+
+.feature-screenshots figcaption {
+    margin-top: 0.4rem;
+    font-size: 0.8rem;
+    opacity: 0.6;
+}
+
+.demo-img {
+    width: 220px;
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+    display: block;
+}
+
+/* ── Feature Description ─────────────────────────────────── */
+
+.feature-description {
+    flex: 1 1 280px;
+}
+
+.feature-description p {
+    margin-top: 0;
+    line-height: 1.65;
+}
+
+.feature-highlights {
+    margin-top: 1rem;
+    padding-left: 1.2rem;
+    line-height: 1.8;
+}
+
+.feature-highlights li::marker {
+    color: var(--accent, #4a90d9);
+}
+
+/* ── Responsive: stack on small screens ──────────────────── */
+
+@media (max-width: 640px) {
+    .feature-body,
+    .feature-body--reversed {
+        flex-direction: column;
+    }
+
+    .demo-img {
+        width: 100%;
+    }
+}
+

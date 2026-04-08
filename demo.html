@@ -13,39 +13,170 @@
 
     <!-- Secondary bar -->
     <div class="secondary-bar">
-    <a href="index.html"><img src="KIMinder360 Logo Full Size.png" alt="Team Logo" class="logo"></a>
+        <a href="index.html"><img src="KIMinder360 Logo Full Size.png" alt="Team Logo" class="logo"></a>
         <h1>KIMinder360 Mobile App</h1>
     </div>
 
     <div class="section" id="demo">
-        <h2>Demo</h2>
-        <p>Below are some of the key prototyped UI features of the KIMinder360 app.</p>
+        <h2>Feature Demonstration</h2>
+        <p>Below are the key features of the KIMinder360 app, each component is designed to give users full control over their situational awareness training experience. Next to the descriptions of each feature you will find a screenshot or video demonstrating what the implementation looks like in the app.</p>
 
-        <div class="demo-gallery">
-            <div class="demo-item">
-                <h3>Home Screen</h3>
-                <p>The app home screen provides quick access to active hours and category settings. A list of recently completed directives will be added below these settings to easily view your training progress.</p>
-                <img src="DemoContent/Home Screen.png" alt="KIMinder360 Home Screen" class="demo-img">
+        <!-- Home Screen -->
+        <div class="feature-block">
+            <div class="feature-header">
+                <h3>🏠 Home Screen</h3>
+                <p class="feature-tagline">Your central hub for everything KIMinder360.</p>
             </div>
-
-            <div class="demo-item">
-                <h3>Category Selection</h3>
-                <p>Users can choose directive categories to tailor training to their goals. The automated directives will then be randomly chosen from those active categories.</p>
-                <img src="DemoContent/Category Selection Screen.png" alt="Category Selection Screen" class="demo-img">
-            </div>
-
-            <div class="demo-item">
-                <h3>Active Hours</h3>
-                <p>Users can set action windows for each day to control when directives are delivered, reducing interruptions outside preferred times.</p>
-                <img src="DemoContent/Active Hours Screen.png" alt="Active Hours Screen" class="demo-img">
+            <div class="feature-body">
+                <div class="feature-screenshots">
+                    <figure>
+                        <img src="DemoContent/Home Screen.png" alt="KIMinder360 Home Screen" class="demo-img">
+                        <figcaption>Main home screen view</figcaption>
+                    </figure>
+                </div>
+                <div class="feature-description">
+                    <p>The Home Screen is the central hub for all user activity. From here, users can quickly jump into any part of the app — adjusting their active hours, browsing and toggling directive categories, updating personal settings, and reviewing the directives that have recently been sent to them.</p>
+                    <p>The recent directives list at the bottom of the screen lets users track their training progress at a glance, making it easy to reflect on what situations they've been prompted to engage with throughout the day.</p>
+                    <ul class="feature-highlights">
+                        <li>Quick access to Active Hours and Category settings</li>
+                        <li>View recently received directives</li>
+                        <li>Navigate to all major app sections</li>
+                    </ul>
+                </div>
             </div>
         </div>
+
+        <!-- Category Selection -->
+        <div class="feature-block feature-block--alt">
+            <div class="feature-header">
+                <h3>🗂️ Category Selection</h3>
+                <p class="feature-tagline">Tailor your training to what matters most to you.</p>
+            </div>
+            <div class="feature-body feature-body--reversed">
+                <div class="feature-screenshots">
+                    <figure>
+                        <img src="DemoContent/Category Selection Screen.png" alt="Category Selection Screen" class="demo-img">
+                        <figcaption>Category toggle screen</figcaption>
+                    </figure>
+                </div>
+                <div class="feature-description">
+                    <p>The Category Selection screen gives users full control over the types of directives they receive. Each category represents a different domain of situational awareness training — users can toggle individual categories on or off so that automated directives are only drawn from the areas they want to focus on.</p>
+                    <p>This screen also serves as the entry point to the Personal Directives list, allowing users to seamlessly move between managing categories and managing their own custom directives.</p>
+                    <ul class="feature-highlights">
+                        <li>Toggle directive categories on or off individually</li>
+                        <li>Focus your training on specific life areas</li>
+                        <li>Access your Personal Directives list directly from this screen</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Active Hours -->
+        <div class="feature-block">
+            <div class="feature-header">
+                <h3>⏰ Active Hours Customization</h3>
+                <p class="feature-tagline">Receive directives only when it works for you.</p>
+            </div>
+            <div class="feature-body">
+                <div class="feature-screenshots">
+                    <figure>
+                        <img src="DemoContent/Active Hours Screen.png" alt="Active Hours Screen" class="demo-img">
+                        <figcaption>Active hours schedule view</figcaption>
+                    </figure>
+                </div>
+                <div class="feature-description">
+                    <p>Active Hours let users define exactly when during the day KIMinder360 will send them directives. Each day of the week can be configured independently — users can enable or disable active hours for a given day and set a custom start and end time for that day's window.</p>
+                    <p>This feature ensures that training fits naturally into users' schedules without causing unwanted interruptions during work, sleep, or other committed times. Directives will only be delivered within the windows you define.</p>
+                    <ul class="feature-highlights">
+                        <li>Enable or disable active hours per day of the week</li>
+                        <li>Set custom start and end times for each day</li>
+                        <li>Prevent interruptions outside your preferred schedule</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Settings -->
+        <div class="feature-block feature-block--alt">
+            <div class="feature-header">
+                <h3>⚙️ Settings</h3>
+                <p class="feature-tagline">Personalize your KIMinder360 experience.</p>
+            </div>
+            <div class="feature-body feature-body--reversed">
+                <div class="feature-screenshots">
+                    <figure>
+                        <img src="DemoContent/Settings Screen.png" alt="Settings Screen" class="demo-img">
+                        <figcaption>App settings and preferences</figcaption>
+                    </figure>
+                </div>
+                <div class="feature-description">
+                    <p>The Settings screen is where users can fine-tune their KIMinder360 experience to match their preferences. From visual customization to how often they're prompted, this screen puts control in the user's hands.</p>
+                    <p>Directive Frequency allows users to adjust how often they receive directives throughout the day — whether they want light, occasional nudges or a more intensive training cadence. Theme selection lets users choose a visual style that feels comfortable for long-term use.</p>
+                    <ul class="feature-highlights">
+                        <li>Theme selection to customize the app's appearance</li>
+                        <li>Directive Frequency control for training intensity</li>
+                        <li>Additional personalization and preference options</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Personal Directives -->
+        <div class="feature-block">
+            <div class="feature-header">
+                <h3>✏️ Personal Directives</h3>
+                <p class="feature-tagline">Apply your training to what's unique in your own life.</p>
+            </div>
+            <div class="feature-body">
+                <div class="feature-screenshots">
+                    <figure>
+                        <img src="DemoContent/Personal Directives Screen.png" alt="Personal Directives Screen" class="demo-img">
+                        <figcaption>Create and manage custom directives</figcaption>
+                    </figure>
+                </div>
+                <div class="feature-description">
+                    <p>Personal Directives allow users to go beyond the built-in directive library by creating their own. Whether it's a specific habit, a personal goal, or a situational reminder unique to your life, this screen lets you write, manage, and delete your own custom directives.</p>
+                    <p>Custom directives are integrated directly into the automated training system — once created and enabled, they're included in the pool of directives that can be sent during active hours just like any built-in directive.</p>
+                    <ul class="feature-highlights">
+                        <li>Create custom directives tailored to your personal goals</li>
+                        <li>Edit or delete existing personal directives at any time</li>
+                        <li>Custom directives integrate seamlessly into automated delivery</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Info Screen -->
+        <div class="feature-block feature-block--alt">
+            <div class="feature-header">
+                <h3>ℹ️ Info Screen</h3>
+                <p class="feature-tagline">Start your journey with a clear understanding of KIMinder360.</p>
+            </div>
+            <div class="feature-body feature-body--reversed">
+                <div class="feature-screenshots">
+                    <figure>
+                        <img src="DemoContent/Info Screen.png" alt="Info Screen" class="demo-img">
+                        <figcaption>Welcome and onboarding screen</figcaption>
+                    </figure>
+                </div>
+                <div class="feature-description">
+                    <p>The Info Screen is the first thing new users see when they open KIMinder360. It provides a thorough introduction to the app's purpose — explaining what KIMinder360 is, why situational awareness training matters, and how the directive-based system works to build that awareness over time.</p>
+                    <p>The screen walks through each component of the training experience so users enter the app with a clear mental model of what to expect. At the end of the Info Screen, users are presented with a disclaimer they must acknowledge and agree to before gaining access to the rest of the app.</p>
+                    <ul class="feature-highlights">
+                        <li>Full description of KIMinder360 and its training philosophy</li>
+                        <li>Breakdown of key components of the situational awareness experience</li>
+                        <li>Required disclaimer and user agreement before app access</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <div id="site-footer">Loading footer...</div>
+
     <script>
-        // Load shared nav + footer and inject into the page
-    fetch('nav-footer.html?v=' + Date.now())
+        fetch('nav-footer.html?v=' + Date.now())
             .then(resp => { if (!resp.ok) throw new Error('Network response was not ok'); return resp.text(); })
             .then(html => {
                 const tmp = document.createElement('div');
