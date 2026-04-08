@@ -21,35 +21,61 @@
         <h2>Schedule & Milestones</h2>
 
         <p>
-            The development of KIMinder360 follows a structured, milestone-based schedule aligned with the Northern Arizona University Spring 2026 semester, spanning approximately four months from January 2026 to May 2026. This 16-week timeline ensures organized progression, iterative refinement, and timely completion of core features, including data storage, user customization, notification delivery, and risk mitigation. The plan prioritizes foundational elements like the database and notifications early on to allow adequate time for refinement, while integrating safety features mid-project. Breaks, such as Spring Break, are accounted for in the calendar but do not alter the milestone structure. By adhering to this roadmap, we aim to deliver a fully functional, tested, and scalable app by early May 2026, with room for future enhancements like cloud synchronization and gamification.
+            The development of KIMinder360 follows a structured, three-phase implementation plan aligned with the Northern Arizona University Spring 2026 semester, spanning approximately 15 weeks from January 2026 to May 2026. Each phase builds logically on the last — establishing the foundational data layer and core logic first, then expanding into full feature delivery and user interaction, and finally polishing the app for public release. Breaks such as Spring Break are accounted for in the calendar but do not alter the milestone structure. By adhering to this roadmap, we aim to deliver a fully functional, tested, and scalable app by early May 2026, with room for future enhancements like cloud synchronization and gamification.
         </p>
 
-        <h2>Project Milestones Include:</h2>
+        <h2>Phase 1 (Weeks 1–5): Foundational Database Linking and Core Logic</h2>
+        <p>This phase establishes the core data models, persistence layer, and baseline application logic required for directive generation and scheduling. Work in this phase focuses on building the foundational infrastructure upon which all future features depend.</p>
+
         <ol>
-            <li><strong> Project Setup & Planning (Week 1–2): </strong> Establish project repository, version control, and task tracking. Define final app architecture (MVVM pattern with Room and ViewModel). Confirm tech stack: Kotlin, Room Database, Android Notification Manager, and optional Firebase integration. Deliverable: Development environment configured and documentation initialized
-            </li>
+            <li><strong>UI Components:</strong> Implement the Settings Page as the central access point for user customization. Create the Frequency Customization Screen to allow users to specify how often directives should be delivered. Implement navigation between the home, settings, and customization screens.</li>
             <br>
 
-            <li><strong> Core Database Design (Week 3–4): </strong>
-            Create Room database schema for directives, user preferences, and history tracking. Implement data access objects (DAOs) and entity models. Deliverable: Fully functional local data layer with CRUD operations. </li>
+            <li><strong>App Logic Layer:</strong> Implement random category and directive selection functions, including duplicate avoidance. Create a directive scheduling function that assigns directives within the user's defined action window. Encapsulate logic in ViewModels and combine functions to implement automated directive delivery using WorkManager and Android's notification APIs, respecting action windows and frequency limits.</li>
             <br>
 
-            <li><strong> Directive Management System (Week 5–6): </strong> Implement directive creation, editing, deletion, and retrieval features. Enable user-defined categories and personalization. Deliverable: Users can view, add, and modify directives through a simple UI. </li>
+            <li><strong>Local Data Layer:</strong> Define and implement Room entities for directives, categories, active hours, and recent directives. Create a local datastore for user preferences. Implement DAOs to support CRUD operations and reactive data streams for UI.</li>
             <br>
 
-            <li><strong> Notification Scheduling and Action Windows (Week 7–8): </strong> Develop system for user-configured Action Windows. Integrate random directive scheduling and delivery using Android notifications. Deliverable: Users receive directives at appropriate, randomized times.</li>
+            <li><strong>Key Deliverables:</strong> Functional settings and frequency configuration UI; working local database with linked entities; verified random selection and scheduling logic; directive response and history tracking.</li>
+        </ol>
+
+        <h2>Phase 2 (Weeks 6–10): Added Functionality and Feature Completion</h2>
+        <p>This phase focuses on completing the core directive experience by implementing improvements to the delivery algorithm, notification interaction, and expanded user-accessible data management. The emphasis is enabling users to receive, respond to, review, and manage directives in a reliable and intuitive way.</p>
+
+        <ol>
+            <li><strong>UI Components:</strong> Launch the Directive Response Screen when a notification is tapped, displaying options based on the user's selected interaction level. Enhance the home screen dashboard to show recently delivered directives, send times, and completion status. Add controls to delete history entries and manage custom directives. Finalize dark mode support and general UI polish.</li>
             <br>
 
-            <li><strong> Progress Tracking Dashboard (Week 9–10): </strong> Design UI for displaying completed directives, progress statistics, and user preferences. Include analytics features for engagement tracking. Deliverable: Functional progress dashboard connected to local database. </li>
+            <li><strong>App Logic Layer:</strong> Improve notification scheduling to conserve battery and avoid repeated directives. Implement three engagement levels — No Engagement (notification only), Minimal Engagement (Yes/No confirmation), and Full Engagement (written response). Add logic for skipping, silencing, and postponing directives.</li>
             <br>
 
-            <li><strong> Safety & Moderation Systems (Week 11–12): </strong> Implement directive validation, flagging, and reporting tools. Add filters for unsafe or ambiguous content. Deliverable: Functional moderation and risk-mitigation system. </li>
+            <li><strong>Local Data Layer:</strong> Support deletion of recent directives from the response screen. Implement full CRUD for custom user-created directives stored under a "Personal" category. Expand the database with additional preloaded directives.</li>
             <br>
 
-            <li><strong> Testing and Quality Assurance (Week 13): </strong> Conduct unit and integration testing of database, notifications, and UI components. Evaluate usability and timing accuracy of notifications. Deliverable: Stable, bug-free beta version. </li>
+            <li><strong>Notification System:</strong> Tapping a notification opens the Directive Response Screen directly. Add in-notification response actions (completion confirmation or free response). Ensure notifications are cancellable, reschedulable, and postponeable, and validate reliability across device restarts and background states.</li>
             <br>
 
-            <li><strong> Final Integration & Deployment (Week 14–16): </strong> Prepare app for release including icon, splash screen, and onboarding screens. Conduct final presentation and sponsor review. Deliverable: Completed app ready for public release and submission.</li>
+            <li><strong>Key Deliverables:</strong> Fully automated directive notification system with complex algorithm; functional directive response flow by engagement level; recent directive history management; support for custom directives; polished and accessible UI including dark mode.</li>
+        </ol>
+
+        <h2>Phase 3 (Weeks 11–15): Polishing, Stretch Goals, and Deployment Preparation</h2>
+        <p>This phase serves as a refinement and expansion period focused on stability, client feedback, stretch goal implementation, and preparing the application for public testing and deployment. Core functionality is considered complete entering this phase.</p>
+
+        <ol>
+            <li><strong>UI and UX Polish:</strong> Apply bug fixes and refinements based on internal testing and sponsor feedback. Improve navigation flow, animations, and visual consistency. Finalize the onboarding flow, including legal disclaimers, permission prompts, and an introduction tutorial screen.</li>
+            <br>
+
+            <li><strong>App Logic and Performance Optimization:</strong> Optimize scheduling and notification logic to reduce battery and CPU usage. Address edge cases with overlapping Action Windows and rapid preference changes. Improve error handling, logging, and fail-safe behaviors.</li>
+            <br>
+
+            <li><strong>Stretch Goals and Optional Features:</strong> Begin optional Firebase integration for community-shared directives. Explore cross-platform iOS implementation. Implement infrastructure hooks for future leaderboards, an admin dashboard, and premium directive packs. Complete active hours refactoring to support multiple action windows per day.</li>
+            <br>
+
+            <li><strong>Testing and Deployment:</strong> Conduct end-to-end testing across multiple Android versions and both physical and emulated devices. Perform usability testing against defined performance and learning metrics. Prepare Google Play Store assets (description, screenshots, privacy policy). Deploy to internal testing track for final validation.</li>
+            <br>
+
+            <li><strong>Key Deliverables:</strong> Stable, polished application meeting all performance and usability requirements; optional cloud feature prototypes if pursued; fully tested MVP ready for public or sponsor-facing release; Google Play Store deployment for testing or launch.</li>
         </ol>
 
         <div style="text-align: center;">
@@ -59,6 +85,11 @@
                 style="width: 80%; max-width: 1000px;"
             >
         </div>
+
+        <p>
+            The milestone roadmap above outlines a phased development approach aligned with the system’s architecture, enabling parallel implementation while preserving critical dependencies. Phase 1 establishes the foundational data models, directive selection logic, scheduling mechanisms, and core settings UI that all subsequent features rely on. Phase 2 builds upon this foundation by completing the end to end directive experience, including interactive notifications, engagement level responses, directive history management, and user created content, with UI, logic, and database enhancements progressing concurrently. Phase 3 focuses on refinement, optimization, and scalability, incorporating bug fixes, performance tuning, usability improvements, optional cloud integration, and deployment preparation. Throughout development, the offline first requirement is preserved, cloud features remain isolated from core functionality, and testing is performed incrementally to ensure stability, reliability, and readiness for release.
+
+        </p>
 
         <p>This phased approach builds logically, addressing risks through mid-project safety integration and ensuring a robust foundation for post-MVP expansions.</p>
     </div>
